@@ -9,15 +9,16 @@ function Footer() {
   return (
     <>
     <div className='Footer'>
-    <div className='Info'>
-        <p>www.delipizza.com</p>
-        <p>Síguenos en facebook</p>
-    </div>
-    <div className="Iconos">
-      <img src={Facebook} alt="Facebook" className="social-icon" />
-      <img src={Instagram} alt="Instagram" className="social-icon" />
-      <img src={Youtube} alt="YouTube" className="social-icon" />
-    </div>
+        <div className='Info'>
+            <p>www.delipizza.com</p>
+            <p>Síguenos en facebook</p>
+        </div>
+        
+        <div className="Iconos">
+        <img src={Facebook} alt="Facebook" className="social-icon" />
+        <img src={Instagram} alt="Instagram" className="social-icon" />
+        <img src={Youtube} alt="YouTube" className="social-icon" />
+        </div>
     </div>
     </>
   );

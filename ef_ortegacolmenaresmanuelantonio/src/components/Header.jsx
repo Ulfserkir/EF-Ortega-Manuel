@@ -11,7 +11,7 @@ function Header() {
       <img 
         src={Logo}
         alt="Deli Pizza Logo" 
-        className={isHovered ? 'logo hover' : 'logo'} 
+        className='Logo'
         onMouseEnter={() => setIsHovered(true)} 
         onMouseLeave={() => setIsHovered(false)} 
       />
@@ -29,9 +29,9 @@ function CurrentDateTime() {
   }, []);
 
   return (
-    <div>
-      <span>{currentTime.toLocaleDateString()}</span>
-      <span>{currentTime.toLocaleTimeString()}</span>
+    <div className='time'>
+      <span> <p>Fecha: </p>{currentTime.toLocaleDateString()}</span>
+      <span> <p>Hora: </p>{currentTime.toLocaleTimeString()}</span>
     </div>
   );
 }

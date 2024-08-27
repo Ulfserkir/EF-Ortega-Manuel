@@ -6,6 +6,7 @@ import pizza2 from '../assets/pizza2.png'
 import pizza3 from '../assets/pizza3.png'
 import pizza4 from '../assets/pizza4.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Banner.css'
 
 function Banner() {
   const [index, setIndex] = useState(0);
