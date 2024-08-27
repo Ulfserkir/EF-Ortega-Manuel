@@ -1,6 +1,11 @@
 import { useState } from 'react';
+import { Fragment } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import pizza1 from '../assets/pizza1.png'
+import pizza2 from '../assets/pizza2.png'
+import pizza3 from '../assets/pizza3.png'
+import pizza4 from '../assets/pizza4.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Banner() {
   const [index, setIndex] = useState(0);
@@ -12,27 +17,16 @@ function Banner() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <img src={pizza1} className='Carousel' alt='pizza1'/>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        <img src={pizza2} className='Carousel' alt='pizza2'/>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <img src={pizza3} className='Carousel' alt='pizza3'/>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={pizza4} className='Carousel' alt='pizza4'/>
       </Carousel.Item>
     </Carousel>
   );
